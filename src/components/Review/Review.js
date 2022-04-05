@@ -13,7 +13,7 @@ const Review = (props) => {
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>"{review}"</Card.Text>
             </Card.Body>
-            <Card.Body >
+            <Card.Body  >
                 <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
                 <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
                 <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>

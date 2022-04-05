@@ -18,7 +18,7 @@ const Home = () => {
                         <Button className='text-white car-btn mt-3 px-3 py-2'>Click Here</Button>
                     </div>
                     <div className="car-img">
-                        <img src='car.jpg' alt="" />
+                        <img src='img/car.jpg' alt="" />
                     </div>
                 </div>
                 {/* shows 3 reviews on the home page */}
@@ -33,7 +33,7 @@ const Home = () => {
                         }
                     </div>
                 </div>
-                <div className='reviews-btn'>
+                <div className='reviews-btn mb-5'>
                     <Link className='btn' to='/reviews'>See All Reviews</Link>
                 </div>
             </Container>

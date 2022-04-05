@@ -44,7 +44,7 @@ const DashBoard = () => {
     return (
         <div>
             <Container>
-                <div className='chart-container'>
+                <div className='chart-container mb-5'>
                     {/* line-chart */}
                     <div className='lineChart'>
                         <LineChart width={350} height={200} data={data}>
