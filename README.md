@@ -2,7 +2,13 @@
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Markup : # thus #
+# I have described my work
+
+Markup : \* At first, I installed react-router-dom, then set up BrowserRouter in src/index.js. After that, I used Routes in the src/App.js.
+
+Markup : \* Then I create components like Home, Reviews, DashBoard, Blogs and connect them by Link
+Markup : \* Then I show the Review cart and the Charts with responsive design
+Markup : \* Finally, I answered some questions in the Blogs components and push the code to GitHub.After that, I deployed the site on the netlify.
 
 ## Available Scripts
 
