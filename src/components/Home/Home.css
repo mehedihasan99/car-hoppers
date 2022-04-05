@@ -1,0 +1,31 @@
+.car-container{
+    display: grid;
+    margin-top: 100px;
+    justify-content: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(2,1fr);
+}
+.homePage-customer-reviews{
+    height: 400px;
+}
+.car-img img{
+    width: 100%;
+}
+.car-btn{
+    background-color: #004B94;
+}
+.reviews-btn{
+    display: flex;
+    justify-content: center;
+}
+.reviews-btn .btn{
+    border: 0;
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: #004B94;
+    color: #ffff;
+    border-radius: 5px;
+}
+.reviews-btn .btn:hover{
+    background-color: #05274a;
+}
