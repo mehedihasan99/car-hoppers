@@ -7,7 +7,7 @@ const Review = (props) => {
     // console.log(props.review);
     const { name, picture, review, id } = props.review;
     return (
-        <Card style={{ width: '20rem' }}>
+        <Card className='text-center'>
             <Card.Img variant="top" style={{ width: '100px', height: '100px', objectFit: "cover" }} className='user-pic p-2' src={picture} alt='reviewer-image' />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>

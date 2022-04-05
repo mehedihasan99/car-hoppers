@@ -1,8 +1,12 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useReviews from '../hooks/useReviews';
+import Review from '../Review/Review';
 import './Home.css'
 const Home = () => {
+    const [reviews, setReviews] = useReviews();
+    const homeReviews = reviews.slice(0, 3);
     return (
         <div>
             <Container >
@@ -17,8 +21,17 @@ const Home = () => {
                         <img src='car.jpg' alt="" />
                     </div>
                 </div>
-                <div className="homePage-customer-reviews text-center mt-3">
-                    <h2>Customer Reviews</h2>
+                {/* shows 3 reviews on the home page */}
+                <div>
+                    <h2 style={{ color: "#004B94" }} className='text-center mb-5'>Customer Reviews: {homeReviews.length}</h2>
+                    <div className="homePage-customer-reviews text-center mt-3">
+                        {
+                            homeReviews.map(review => <Review
+                                key={review.id}
+                                review={review}
+                            ></Review>)
+                        }
+                    </div>
                 </div>
                 <div className='reviews-btn mb-3'>
                     <Link className='btn' to='/reviews'>See All Reviews</Link>
