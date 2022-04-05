@@ -33,7 +33,7 @@ const Home = () => {
                         }
                     </div>
                 </div>
-                <div className='reviews-btn mb-3'>
+                <div className='reviews-btn'>
                     <Link className='btn' to='/reviews'>See All Reviews</Link>
                 </div>
             </Container>
