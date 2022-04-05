@@ -47,7 +47,7 @@ const DashBoard = () => {
                 <div className='chart-container mb-5'>
                     {/* line-chart */}
                     <div className='lineChart'>
-                        <LineChart width={350} height={200} data={data}>
+                        <LineChart width={300} height={200} data={data}>
                             <Line dataKey={'investment'}></Line>
                             <Line dataKey={'sell'}></Line>
                             <XAxis dataKey={"month"} />
@@ -56,14 +56,14 @@ const DashBoard = () => {
                     </div>
                     {/* pie chart  */}
                     <div className='pieChart'>
-                        <PieChart width={350} height={200}>
+                        <PieChart width={300} height={200}>
                             <Pie data={data} dataKey="sell" nameKey="" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                             <Pie data={data} dataKey="investment" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                         </PieChart>
                     </div>
                     {/* {RadarChart } */}
-                    <div>
-                        <RadarChart outerRadius={90} width={350} height={200} data={data}>
+                    <div className='radarChart'>
+                        <RadarChart outerRadius={90} width={300} height={200} data={data}>
                             <PolarGrid />
                             <PolarAngleAxis dataKey="month" />
                             <PolarRadiusAxis angle={30} domain={[0, 150]} />
@@ -72,9 +72,9 @@ const DashBoard = () => {
                             <Legend />
                         </RadarChart>
                     </div>
-                    <div>
+                    <div className='treemap'>
                         <Treemap
-                            width={350}
+                            width={300}
                             height={200}
                             data={data}
                             dataKey="revenue"
