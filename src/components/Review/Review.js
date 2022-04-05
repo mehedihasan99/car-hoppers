@@ -1,3 +1,5 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import './Review.css'
@@ -11,9 +13,13 @@ const Review = (props) => {
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>"{review}"</Card.Text>
             </Card.Body>
-            <div className='rating'>
-
-            </div>
+            <Card.Body >
+                <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
+                <FontAwesomeIcon className='text-warning me-2' icon={faStar}></FontAwesomeIcon>
+            </Card.Body>
         </Card>
     );
 };
